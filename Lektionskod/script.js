@@ -5,7 +5,10 @@ window.addEventListener('load',() => {
     console.log(pokemons.length);
     console.log(pokemons[0]);
 
-    renderCard(pokemons[69]);
+    pokemons.forEach(pokemon => {
+        renderCard(pokemon);
+    });
+
 });
 
 function renderCard(pokemon) {

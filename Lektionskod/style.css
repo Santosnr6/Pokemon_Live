@@ -47,7 +47,8 @@ body {
     background-color: black;
     color: white;
     border-radius: 50%;
-    padding: 0.9rem;
+    padding: 1rem;
+    margin: auto;
 }
 
 .card-info {
@@ -58,4 +59,19 @@ body {
     width: 50%;
     border-radius: 50%;
     padding: 1rem;
+}
+
+.table {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.table-cell {
+    border: 1px solid black;
+    width: 50%;
+    padding: 1rem;
+}
+
+.d-none {
+    display: none;
 }
