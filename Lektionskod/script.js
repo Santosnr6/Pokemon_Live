@@ -2,19 +2,32 @@
 
 window.addEventListener('load',() => {
     console.log('Window loaded');
-    console.log(pokemons.length);
-    console.log(pokemons[0]);
 
-    pokemons.forEach(pokemon => {
-        renderCard(pokemon);
-    });
-
+    initPage();
 });
 
+function initPage() {
+    console.log('initPage()');
+}
+
+function handleLoginClick(event) {
+    console.log('handleLoginClick()');
+}
+
+function validateForm() {
+    console.log('validateForm()');
+}
+
+function generatePokemon(input) {
+    console.log('generatePokemon()');
+}
+
+function searchPokemon(input) {
+    console.log('searchPokemon()');
+}
+
 function renderCard(pokemon) {
-    console.log(pokemon.name);
-    
-    const containerRef = document.querySelector('#cardContainer');
+    const containerRef = document.querySelector('#pokedexContainer');
     const cardRef = document.createElement('div');
     cardRef.classList.add('card');
     containerRef.appendChild(cardRef);
@@ -85,6 +98,8 @@ function renderCard(pokemon) {
     tableRef.appendChild(rowRef);
     
     rowRef.appendChild(renderCell('Total', pokemon.stats.total));
+
+    return cardRef;
 }
 
 function renderCell(statName, stat) {
